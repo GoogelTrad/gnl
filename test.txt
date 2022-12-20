@@ -1,10 +1,1 @@
-total 104
-drwxr-xr-x   9 celianmichez  staff    288 17 déc 11:32 .
-drwxr-xr-x   8 celianmichez  staff    256 12 déc 11:56 ..
-drwxr-xr-x  12 celianmichez  staff    384 13 déc 10:23 .git
--rwxr-xr-x@  1 celianmichez  staff  33890 17 déc 11:32 a.out
--rw-r--r--@  1 celianmichez  staff   1907 17 déc 11:32 get_next_line.c
--rw-r--r--@  1 celianmichez  staff   1204 17 déc 11:28 get_next_line.h
--rw-r--r--@  1 celianmichez  staff   1613 17 déc 11:31 get_next_line_utils.c
--rw-r--r--@  1 celianmichez  staff   1163 17 déc 11:32 main.c
--rw-r--r--@  1 celianmichez  staff      0 17 déc 11:33 test.txt
+

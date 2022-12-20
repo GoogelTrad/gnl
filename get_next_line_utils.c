@@ -6,7 +6,7 @@
 /*   By: cmichez <cmichez@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:21:26 by cmichez           #+#    #+#             */
-/*   Updated: 2022/12/17 11:49:38 by cmichez          ###   ########.fr       */
+/*   Updated: 2022/12/20 12:02:52 by cmichez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,38 @@ char	*ft_strcat(char *dest, char *src)
 		n++;
 	}
 	dest[n] = '\0';
+	return (dest);
+}
+
+char	*ft_strncat(char *dest, char *src, int n)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	j = 0;
+	while (dest[j] != '\0')
+		j++;
+	while (src[i] != '\0' && i < n)
+	{
+		dest[j] = src[i];
+		i++;
+		j++;
+	}
+	dest[j] = '\0';
+	return (dest);
+}
+
+char	*ft_strncpy(char *dest, char *src, int n)
+{
+	int	i;
+
+	i = 0;
+	while (src[i] && i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
 	return (dest);
 }

@@ -6,7 +6,7 @@
 /*   By: cmichez <cmichez@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:33:11 by cmichez           #+#    #+#             */
-/*   Updated: 2022/12/17 12:02:37 by cmichez          ###   ########.fr       */
+/*   Updated: 2022/12/20 13:11:11 by cmichez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@
 int main(void)
 {
     int fd;
-    int i;
+    char *toto;
 
-    i = 0;
     fd = open("test.txt", O_RDONLY);
-    while (i < 4)
+    toto = get_next_line((fd));
+    while (toto)
     {
-        //printf("%s", get_next_line(fd));
-        get_next_line(fd);
-        i++;
+        printf("%s",toto);
+        toto = get_next_line((fd));
     }
+    printf("%s",toto);
 }
